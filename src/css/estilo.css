@@ -1,0 +1,108 @@
+
+:root{
+    --color1:#198754;
+    --color2:#000000;
+    --color3:#ffffff;
+    --color4:#ffffff;
+    --bgColor1:#1F1D1D;
+    --bgColor2:#000;
+    --bgColor3:#262626;
+}
+
+/* Corpo da página */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: var(--bgColor1);
+}
+
+/* Header */
+header {
+  background-color:var(--bgColor2);
+  padding: 1rem 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  margin-bottom: 3rem;
+}
+
+/* titulo do header */
+header h1{
+  margin: 0;
+  font-weight: bold;
+  color:var(--color4);
+}
+ /* deixar apenas o span em destaque */
+header span {
+  color: var(--color3);
+  padding: 0 0.5rem;
+}
+/* main do projeto */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Deixar os cards um do lado do outro */
+.grid-partidas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+/* cards */
+.card {
+  background: var(--bgColor2);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+/* cor dos nomes/horarios dos times */
+#times1{
+    color: #ced4da;
+}
+#horarios1{
+    color: #ced4da
+}
+#times2{
+    color: #ced4da;
+}
+#horarios2{
+    color: #ced4da
+}
+
+/* Inputs e Botões */
+.input-partida{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+input {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  background: #e0e6eb;
+}
+.btn-palpite {
+  width: 100%;
+  padding: 0.5rem;
+  background: var(--bgColor3);
+  color: var(--color3);
+  border: 1px solid #a59f9f;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* Histórico */
+.historico {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: var(--bgColor1);
+  border-radius: 1rem;
+}
+/* Rodapé  */
+footer {
+  text-align: center;
+  padding: 3rem;
+  color: var(--color2);
+  font-size: 0.8rem;
+}

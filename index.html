@@ -3,38 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Well Bets<span>2026</span></title>
+    <!-- CSS EXTERNO -->
+     <link rel="stylesheet" href="./src/css/estilo.css">
+    <title>CityBets</title>
 </head>
 <body>
-    <header>
-        <h1>WellBets <span>2026</span></h1>
+   <header>
+            <h1>CITYBETS<span>2026</span></h1>
     </header>
-    <h2>Opções de jogos</h2>
-    <main>
-        <section class="card-jogos">
-            <article id="card-1">
-                <h2>Brasil vs Haiti</h2>
-                <h3>21/06 - 21:30</h3>
-                <input type="number" min="1" max="15">
-                <input type="number" min="1" max="15">
 
+    <main class="container">
+        <h2>Próximas Partidas</h2>
+
+        <section class="grid-partidas">
+            <article class="card">
+                <h5 id="times1">Brasil vs Haiti</h5>
+                <p id="horarios1">20/06 - 21:30</p>
+                <div class="input-partida">
+                    <input type="number" min="0" max="10" placeholder="Brasil" id="time1-1">
+                    <input type="number" min="0" max="10" placeholder="Haiti" id="time2-1">
+                </div>
+                <button  class="btn-palpite">Palpite</button>
             </article>
-            <button onclick="salvarPalpite('Brasil vs Haiti',1)" class="btn-palpite">palpite</button>
 
-             <article id="card-2">
-                <h2>Horlanda vs Japão</h2>
-                <h3>15/06 - 16:00</h3>
-                <input type="number" min="1" max="15">
-                <input type="number" min="1" max="15">
-                <input type="submit" value="Palpite">
-
+            <article class="card">
+                <h5 id="times2">Holanda vs Japão</h5>
+                <p id="horarios2">16/06 - 16:00</p>
+                <div class="input-partida">
+                    <input type="number" placeholder="Holanda" id="time1-2">
+                    <input type="number" placeholder="Japão" id="time2-2">
+                </div>
+                <button class="btn-palpite">Palpite</button>
             </article>
-             <button onclick="salvarPalpite('Holanda vs Jpão',2)" class="btn-palpite">palpite</button>
+        </section>
 
+        <section class="historico">
+            <h3>Histórico de Palpites</h3>
+            <ul id="lista-resultados"></ul>
         </section>
     </main>
-    <!-- JS EXTERNO -->
-     <script src="/src/javascript/script.js"></script>
-</body>
 
+    <footer>
+        <p>&copy; 2026-Bolão</p>
+    </footer>
+
+    
+</body>
 </html>
