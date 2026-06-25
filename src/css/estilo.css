@@ -58,15 +58,19 @@ header span {
 /* cor dos nomes/horarios dos times */
 #times1{
     color: #ced4da;
+    font-size: 20px;
 }
 #horarios1{
-    color: #ced4da
+    color: #ced4da;
+    font-size: 20px;
 }
 #times2{
     color: #ced4da;
+    font-size: 20px;
 }
 #horarios2{
-    color: #ced4da
+    color: #ced4da;
+    font-size: 20px;
 }
 
 /* Inputs e Botões */
