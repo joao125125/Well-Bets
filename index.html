@@ -23,7 +23,7 @@
                     <input type="number" min="0" max="10" placeholder="Brasil" id="time1-1">
                     <input type="number" min="0" max="10" placeholder="Haiti" id="time2-1">
                 </div>
-                <button  class="btn-palpite">Palpite</button>
+                <button onclick="salvarPalpite('Brasil vs Haiti', 1)" class="btn-palpite">Palpite</button>
             </article>
 
             <article class="card">
@@ -33,7 +33,7 @@
                     <input type="number" placeholder="Holanda" id="time1-2">
                     <input type="number" placeholder="Japão" id="time2-2">
                 </div>
-                <button class="btn-palpite">Palpite</button>
+                <button onclick="salvarPalpite('Holanda vs Japão', 2)" class="btn-palpite">Palpite</button>
             </article>
         </section>
 
@@ -47,6 +47,7 @@
         <p>&copy; 2026-Bolão</p>
     </footer>
 
+    <script src="./src/javascript/script.js"></script>
     
 </body>
 </html>
