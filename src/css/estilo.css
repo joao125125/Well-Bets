@@ -9,6 +9,18 @@
     --bgColor3:#262626;
 }
 
+.bg-success {
+  background-color: #198754;
+}
+
+.bg-warning {
+  background-color: #F9FF00;
+}
+
+.bg-danger {
+  background-color: red;
+}
+
 /* Corpo da página */
 body {
   font-family: sans-serif;
@@ -100,7 +112,7 @@ input {
 .historico {
   margin-top: 3rem;
   padding: 1.5rem;
-  background: var(--bgColor1);
+  background: var(--color3);
   border-radius: 1rem;
 }
 /* Rodapé  */
@@ -110,3 +122,4 @@ footer {
   color: var(--color2);
   font-size: 0.8rem;
 }
+
